@@ -26,3 +26,6 @@ def predict():
     output = 'Placed' if prediction[0] == 1 else 'Not Placed'
 
     return render_template('index.html', prediction_text='Prediction: {}'.format(output))
+
+if __name__ == "__main__":
+    app.run()
